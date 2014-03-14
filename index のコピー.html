@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="英会話　オンライン　勉強">
+		<title>オンライン英会話</title>
+
+		<style>
+			p {color: blue;}
+			h1 {color: red;}
+			h2 {color: yellow;}
+			h3 {color: green;}
+		</style>
+
+	</head>
+	<body>
+		<h1>いつでも英会話</h1>
+		<h2>家に帰る途中に英会話しながら時間の効率化して勉強しましょう。</h2>
+		<h3>忙しいあなたへの<br><strong>オンライン英会話</strong></h3>
+
+		<p><span id="myName">ハラ</span></p>
+		<p><input type="text" id="price"></input></p>
+
+		<p><input type="button" id="button" value="クリック"></input></p>
+
+		<script>
+
+		var myname = document.getElementById('myName');
+		myname.innerHTML = '原';
+
+		var price = document.getElementById('price');
+		price.value = '500';
+
+		var button = document.getElementById('button');
+		button.onclick = function (){
+			alert("クリックされまずた")
+		};
+
+		setTimeout(
+			alert("2秒経ちました")
+			,2000);
+
+		var x = 0;
+		var s = "hello" + "world";
+		x += 5;
+
+			/*if(x < 6){
+			alert(s);
+			}else{
+				alert("眠すぎる。。。");
+			}
+
+			var direction = "rignt";
+
+			switch(direction){
+				case "rignt":
+					alert(direction);
+					break;
+				default:
+					alert("not rignt");
+					break;				
+			}
+		
+			i=0
+
+			for( i=0 ; i< 10 ; i++ ){
+				console.log(i);
+			}
+
+			function sum(a,b){
+				a=12;
+				return (a + b);
+			}
+
+			var result = sum(2,1);
+			alert(result);*/
+
+			function getPrice(x){
+				var rate = 0.1;
+				return (x*rate); 
+			}
+
+			console.log(getPrice(40));
+
+			//var sales=[100,200,300];
+			var sales = {'sales2000':2000,'sales2001':2001}
+			console.log(sales['sales2001']);
+
+			var s = new String("This is a pen");
+			console.log(s.length);
+			console.log(s.substr(2,2));
+			console.log(s.replace("pen","pencil"));
+
+			var d = new Date();
+			console.log(d.getFullYear());
+
+			var a = new Array(1,2,3,4,5);
+			console.log(a.join("|"));
+			console.log(a.reverse());
+			console.log(window.innerHeight);
+
+			//window.location.href = "http://www.google.com";
+
+
+		</script>
+	</body>
+
+</html>
